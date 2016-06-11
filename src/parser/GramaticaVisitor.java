@@ -1,4 +1,4 @@
-// Generated from C:/Users/Jorge/Documents/MIEI/4º Ano/MFES/VF/TPVF/grammar\Gramatica.g4 by ANTLR 4.5.3
+// Generated from /home/jorge/Desktop/TP-VF/grammar/Gramatica.g4 by ANTLR 4.5.3
 package parser;
 import org.antlr.v4.runtime.tree.ParseTreeVisitor;
 
@@ -46,6 +46,12 @@ public interface GramaticaVisitor<T> extends ParseTreeVisitor<T> {
 	 * @return the visitor result
 	 */
 	T visitIfCondition(GramaticaParser.IfConditionContext ctx);
+	/**
+	 * Visit a parse tree produced by {@link GramaticaParser#elseCondition}.
+	 * @param ctx the parse tree
+	 * @return the visitor result
+	 */
+	T visitElseCondition(GramaticaParser.ElseConditionContext ctx);
 	/**
 	 * Visit a parse tree produced by {@link GramaticaParser#whileCondition}.
 	 * @param ctx the parse tree

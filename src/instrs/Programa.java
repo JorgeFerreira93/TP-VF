@@ -29,4 +29,9 @@ public class Programa {
     public ArrayList<Instrucao> getInstrucoes() {
         return instrucoes;
     }
+
+    @Override
+    public String toString() {
+        return pre.toString() + instrucoes + pos.toString();
+    }
 }

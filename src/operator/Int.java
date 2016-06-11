@@ -10,6 +10,10 @@ public class Int implements Exp{
         this.n = n;
     }
 
+    public int getN() {
+        return n;
+    }
+
     @Override
     public String toString() {
         return String.valueOf(n);

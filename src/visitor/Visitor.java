@@ -5,6 +5,7 @@ package visitor;
  */
 
 import instrs.*;
+import org.antlr.v4.runtime.tree.ParseTree;
 import parser.*;
 import operator.*;
 
@@ -24,7 +25,6 @@ public class Visitor extends GramaticaBaseVisitor<Value> {
         }
 
         Exp pos = (Exp) visitPosC(ctx.posC()).getValue();
-
         return new Value(new Programa(pre, instrucoes, pos));
     }
 
@@ -60,7 +60,23 @@ public class Visitor extends GramaticaBaseVisitor<Value> {
             instrucoes.add((Instrucao) visitInstr(i).getValue());
         }
 
+        if(ctx.elseCondition() != null){
+            ArrayList<Instrucao> instrucoesElse = (ArrayList<Instrucao>) visitElseCondition(ctx.elseCondition()).getValue();
+            return new Value(new IfCondition(cond, instrucoes, instrucoesElse));
+        }
+
         return new Value(new IfCondition(cond, instrucoes));
+    }
+
+    @Override
+    public Value visitElseCondition(GramaticaParser.ElseConditionContext ctx) {
+        ArrayList<Instrucao> instrucoes = new ArrayList<>();
+
+        for(GramaticaParser.InstrContext i : ctx.instrs().instr()){
+            instrucoes.add((Instrucao) visitInstr(i).getValue());
+        }
+
+        return new Value(instrucoes);
     }
 
     @Override

@@ -24,4 +24,15 @@ public class IfCondition implements Instrucao {
         this.instrucoesElse = null;
     }
 
+    public ArrayList<Instrucao> getInstrucoesElse() {
+        return instrucoesElse;
+    }
+
+    public ArrayList<Instrucao> getInstrucoesIf() {
+        return instrucoesIf;
+    }
+
+    public Exp getCond() {
+        return cond;
+    }
 }

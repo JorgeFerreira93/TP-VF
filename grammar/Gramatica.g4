@@ -23,8 +23,11 @@ instr : ifCondition
       | atr
       ;
 
-ifCondition : 'if' '(' cond ')' '{' instrs '}'
+ifCondition : 'if' '(' cond ')' '{' instrs '}' elseCondition?
             ;
+
+elseCondition : 'else' '{' instrs '}'
+              ;
 
 whileCondition : 'while' '(' cond ')' inv? '{' instrs '}'
                ;

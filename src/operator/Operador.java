@@ -14,6 +14,18 @@ public class Operador implements Exp{
         this.right = right;
     }
 
+    public Exp getLeft() {
+        return left;
+    }
+
+    public Exp getRight() {
+        return right;
+    }
+
+    public String getOp() {
+        return op;
+    }
+
     public void replace(Exp b, Exp a){
         if(b.toString().equals(left.toString())){
             left = (Exp) a.clone();
