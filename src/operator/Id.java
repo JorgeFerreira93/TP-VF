@@ -4,7 +4,7 @@ package operator;
  * Created by Jorge on 11-06-2016.
  */
 public class Id implements Exp {
-    String name;
+    private String name;
 
     public Id(String name){
         this.name = name;

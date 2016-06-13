@@ -11,7 +11,7 @@ import java.util.HashMap;
  */
 public class Prover {
 
-    ArrayList<Exp> condicoes;
+    private ArrayList<Exp> condicoes;
 
     public Prover(ArrayList<Exp> condicoes){
         this.condicoes = condicoes;

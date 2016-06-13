@@ -4,9 +4,9 @@ package operator;
  * Created by Jorge on 11-06-2016.
  */
 public class Operador implements Exp{
-    Exp left;
-    String op;
-    Exp right;
+    private Exp left;
+    private String op;
+    private Exp right;
 
     public Operador(String op, Exp left, Exp right){
         this.left = left;

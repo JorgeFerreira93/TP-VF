@@ -4,7 +4,7 @@ package operator;
  * Created by Jorge on 11-06-2016.
  */
 public class Int implements Exp{
-    int n;
+    private int n;
 
     public Int(int n){
         this.n = n;

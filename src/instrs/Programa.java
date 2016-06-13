@@ -8,9 +8,9 @@ import java.util.ArrayList;
  * Created by Jorge on 10-06-2016.
  */
 public class Programa {
-    Exp pre;
-    ArrayList<Instrucao> instrucoes;
-    Exp pos;
+    private Exp pre;
+    private ArrayList<Instrucao> instrucoes;
+    private Exp pos;
 
     public Programa(Exp pre, ArrayList<Instrucao> instrucoes, Exp pos){
         this.pre = pre;

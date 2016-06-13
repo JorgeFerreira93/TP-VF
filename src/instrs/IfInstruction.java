@@ -8,9 +8,9 @@ import java.util.ArrayList;
  * Created by Jorge on 10-06-2016.
  */
 public class IfInstruction implements Instrucao {
-    Exp cond;
-    ArrayList<Instrucao> instrucoesIf;
-    ArrayList<Instrucao> instrucoesElse;
+    private Exp cond;
+    private ArrayList<Instrucao> instrucoesIf;
+    private ArrayList<Instrucao> instrucoesElse;
 
     public IfInstruction(Exp cond, ArrayList<Instrucao> instrucoesIf, ArrayList<Instrucao> instrucoesElse){
         this.cond = cond;

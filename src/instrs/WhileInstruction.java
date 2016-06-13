@@ -8,9 +8,9 @@ import java.util.ArrayList;
  * Created by Jorge on 10-06-2016.
  */
 public class WhileInstruction implements Instrucao {
-    Exp cond;
-    Exp inv;
-    ArrayList<Instrucao> instrucoes;
+    private Exp cond;
+    private Exp inv;
+    private ArrayList<Instrucao> instrucoes;
 
     public WhileInstruction(Exp cond, Exp inv, ArrayList<Instrucao> instrucoes){
         this.cond = cond;

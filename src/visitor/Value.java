@@ -5,7 +5,7 @@ package visitor;
  */
 public class Value {
 
-    public Object v;
+    private Object v;
 
     public Value(Object v){
         this.v = v;

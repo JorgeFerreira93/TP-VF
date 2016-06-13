@@ -8,10 +8,10 @@ import java.util.ArrayList;
  * Created by jorge on 6/13/16.
  */
 public class ForInstruction {
-    Instrucao atr;
-    Exp cond;
-    Exp inv;
-    ArrayList<Instrucao> instrucoes;
+    private Instrucao atr;
+    private Exp cond;
+    private Exp inv;
+    private ArrayList<Instrucao> instrucoes;
 
     public ForInstruction(Instrucao atr, Exp cond, Exp inv, ArrayList<Instrucao> instrucoes){
         this.atr = atr;
