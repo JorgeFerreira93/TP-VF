@@ -6,7 +6,7 @@
 
 grammar Gramatica;
 
-programa : preC? instrs? posC?
+programa : preC instrs posC
          ;
 
 preC : '{' cond '}'
@@ -18,18 +18,22 @@ posC : '{' cond '}'
 instrs : instr instr*
        ;
 
-instr : ifCondition
-      | whileCondition
+instr : ifInstruction
+      | whileInstruction
+      | forInstruction
       | atr
       ;
 
-ifCondition : 'if' '(' cond ')' '{' instrs '}' elseCondition?
+ifInstruction : 'if' '(' cond ')' '{' instrs '}' elseCondition?
             ;
 
 elseCondition : 'else' '{' instrs '}'
               ;
 
-whileCondition : 'while' '(' cond ')' inv? '{' instrs '}'
+whileInstruction : 'while' '(' cond ')' inv '{' instrs '}'
+               ;
+
+forInstruction : 'for' '(' atr ';' cond ';' atr ')' inv '{' instrs '}'
                ;
 
 inv : '[' cond ']'
@@ -66,6 +70,8 @@ op : '>'
    | '>' '='
    | '=' '='
    | '!' '='
+   | '=' '>'
+   | '<' '=' '>'
    ;
 
 

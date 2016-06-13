@@ -41,11 +41,11 @@ public interface GramaticaVisitor<T> extends ParseTreeVisitor<T> {
 	 */
 	T visitInstr(GramaticaParser.InstrContext ctx);
 	/**
-	 * Visit a parse tree produced by {@link GramaticaParser#ifCondition}.
+	 * Visit a parse tree produced by {@link GramaticaParser#ifInstruction}.
 	 * @param ctx the parse tree
 	 * @return the visitor result
 	 */
-	T visitIfCondition(GramaticaParser.IfConditionContext ctx);
+	T visitIfInstruction(GramaticaParser.IfInstructionContext ctx);
 	/**
 	 * Visit a parse tree produced by {@link GramaticaParser#elseCondition}.
 	 * @param ctx the parse tree
@@ -53,11 +53,17 @@ public interface GramaticaVisitor<T> extends ParseTreeVisitor<T> {
 	 */
 	T visitElseCondition(GramaticaParser.ElseConditionContext ctx);
 	/**
-	 * Visit a parse tree produced by {@link GramaticaParser#whileCondition}.
+	 * Visit a parse tree produced by {@link GramaticaParser#whileInstruction}.
 	 * @param ctx the parse tree
 	 * @return the visitor result
 	 */
-	T visitWhileCondition(GramaticaParser.WhileConditionContext ctx);
+	T visitWhileInstruction(GramaticaParser.WhileInstructionContext ctx);
+	/**
+	 * Visit a parse tree produced by {@link GramaticaParser#forInstruction}.
+	 * @param ctx the parse tree
+	 * @return the visitor result
+	 */
+	T visitForInstruction(GramaticaParser.ForInstructionContext ctx);
 	/**
 	 * Visit a parse tree produced by {@link GramaticaParser#inv}.
 	 * @param ctx the parse tree

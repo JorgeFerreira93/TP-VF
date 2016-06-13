@@ -5,7 +5,6 @@ package visitor;
  */
 
 import instrs.*;
-import org.antlr.v4.runtime.tree.ParseTree;
 import parser.*;
 import operator.*;
 
@@ -21,7 +20,14 @@ public class Visitor extends GramaticaBaseVisitor<Value> {
         ArrayList<Instrucao> instrucoes = new ArrayList<>();
 
         for(GramaticaParser.InstrContext i : ctx.instrs().instr()){
-            instrucoes.add((Instrucao) visitInstr(i).getValue());
+            Instrucao aux = (Instrucao) visitInstr(i).getValue();
+            if(aux instanceof ForInstruction){
+                instrucoes.add(((ForInstruction) aux).getAtr());
+                instrucoes.add(new WhileInstruction(((ForInstruction) aux).getCond(), ((ForInstruction) aux).getInv(), ((ForInstruction) aux).getInstrucoes()));
+            }
+            else{
+                instrucoes.add((Instrucao) visitInstr(i).getValue());
+            }
         }
 
         Exp pos = (Exp) visitPosC(ctx.posC()).getValue();
@@ -33,11 +39,11 @@ public class Visitor extends GramaticaBaseVisitor<Value> {
         if(ctx.atr() != null){
             return visitAtr(ctx.atr());
         }
-        else if(ctx.whileCondition() != null){
-            return visitWhileCondition(ctx.whileCondition());
+        else if(ctx.whileInstruction() != null){
+            return visitWhileInstruction(ctx.whileInstruction());
         }
-        else if(ctx.ifCondition() != null){
-            return visitIfCondition(ctx.ifCondition());
+        else if(ctx.ifInstruction() != null){
+            return visitIfInstruction(ctx.ifInstruction());
         }
         return null;
     }
@@ -51,7 +57,7 @@ public class Visitor extends GramaticaBaseVisitor<Value> {
     }
 
     @Override
-    public Value visitIfCondition(GramaticaParser.IfConditionContext ctx) {
+    public Value visitIfInstruction(GramaticaParser.IfInstructionContext ctx) {
         Exp cond = (Exp) visitCond(ctx.cond()).getValue();
 
         ArrayList<Instrucao> instrucoes = new ArrayList<>();
@@ -62,10 +68,10 @@ public class Visitor extends GramaticaBaseVisitor<Value> {
 
         if(ctx.elseCondition() != null){
             ArrayList<Instrucao> instrucoesElse = (ArrayList<Instrucao>) visitElseCondition(ctx.elseCondition()).getValue();
-            return new Value(new IfCondition(cond, instrucoes, instrucoesElse));
+            return new Value(new IfInstruction(cond, instrucoes, instrucoesElse));
         }
 
-        return new Value(new IfCondition(cond, instrucoes));
+        return new Value(new IfInstruction(cond, instrucoes));
     }
 
     @Override
@@ -80,7 +86,7 @@ public class Visitor extends GramaticaBaseVisitor<Value> {
     }
 
     @Override
-    public Value visitWhileCondition(GramaticaParser.WhileConditionContext ctx) {
+    public Value visitWhileInstruction(GramaticaParser.WhileInstructionContext ctx) {
         Exp cond = (Exp) visitCond(ctx.cond()).getValue();
         Exp invariante = (Exp) visitCond(ctx.inv().cond()).getValue();
 
@@ -90,7 +96,24 @@ public class Visitor extends GramaticaBaseVisitor<Value> {
             instrucoes.add((Instrucao) visitInstr(i).getValue());
         }
 
-        return new Value(new WhileCondition(cond, invariante, instrucoes));
+        return new Value(new WhileInstruction(cond, invariante, instrucoes));
+    }
+
+    @Override
+    public Value visitForInstruction(GramaticaParser.ForInstructionContext ctx) {
+        Instrucao atr = (Instrucao) visitAtr(ctx.atr(0)).getValue();
+        Exp cond = (Exp) visitCond(ctx.cond()).getValue();
+        Exp invariante = (Exp) visitCond(ctx.inv().cond()).getValue();
+
+        ArrayList<Instrucao> instrucoes = new ArrayList<>();
+
+        for(GramaticaParser.InstrContext i : ctx.instrs().instr()){
+            instrucoes.add((Instrucao) visitInstr(i).getValue());
+        }
+
+        instrucoes.add((Instrucao) visitAtr(ctx.atr(1)).getValue());
+
+        return new Value(new ForInstruction(atr, cond, invariante, instrucoes));
     }
 
     @Override
@@ -121,10 +144,6 @@ public class Visitor extends GramaticaBaseVisitor<Value> {
 
     @Override
     public Value visitComp(GramaticaParser.CompContext ctx) {
-        /*String id = (String) visitExp(ctx.exp(0)).getValue();
-        String op = (String) visitOp(ctx.op()).getValue();
-        String n = (String) visitExp(ctx.exp(1)).getValue();
-        return new Value(new Comp(id, op, n));*/
 
         Exp left = (Exp) visitExp(ctx.exp(0)).getValue();
         Exp right = (Exp) visitExp(ctx.exp(1)).getValue();

@@ -48,7 +48,25 @@ public class Operador implements Exp{
             return op + right.toString();
         }
         else{
-            return left.toString() + op + right.toString();
+
+            String res = "";
+            if(left instanceof Int || left instanceof Id){
+                res += left.toString();
+            }
+            else{
+                res += "(" + left.toString() + ")";
+            }
+
+            res += " " + op + " ";
+
+            if(right instanceof Int || right instanceof Id){
+                res += right.toString();
+            }
+            else{
+                res += "(" + right.toString() + ")";
+            }
+
+            return res;
         }
     }
 

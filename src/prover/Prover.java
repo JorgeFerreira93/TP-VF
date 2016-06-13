@@ -17,24 +17,36 @@ public class Prover {
         this.condicoes = condicoes;
     }
 
-    public void parse(){
-        for(Exp e : this.condicoes){
-            System.out.println(e + "    : " + verifica(e));
-        }
-    }
-
-    private Status verifica(Exp e){
+    public ArrayList<Result> parse(){
 
         HashMap<String, String> cfg = new HashMap<String, String>();
         cfg.put("model", "true");
+        cfg.put("proof", "true");
         Context ctx = new Context(cfg);
 
-        BoolExpr b = (BoolExpr) resExp(e, ctx);
+        ArrayList<Result> results = new ArrayList<>();
 
-        Solver solver = ctx.mkSolver();
-        solver.add(b);
+        for(Exp e : this.condicoes){
 
-        return solver.check();
+            BoolExpr b = (BoolExpr) resExp(e, ctx);
+            Solver solver = ctx.mkSolver();
+
+            solver.add(ctx.mkNot(b));
+
+            Status q = solver.check();
+
+            switch (q){
+                case SATISFIABLE:
+                    results.add(new Result(q, e, b, solver.getModel().toString()));
+                    break;
+
+                case UNSATISFIABLE:
+                    results.add(new Result(q, e, b, solver.getProof().toString()));
+                    break;
+            }
+        }
+
+        return results;
     }
 
     private Expr resExp(Exp e, Context ctx){
@@ -99,7 +111,7 @@ public class Prover {
                 return b;
 
             case "<=":
-                b = ctx.mkGe((ArithExpr) left, (ArithExpr) right);
+                b = ctx.mkLe((ArithExpr) left, (ArithExpr) right);
                 return b;
 
             case "&&":
@@ -121,40 +133,12 @@ public class Prover {
             case "==":
                 b = ctx.mkEq(left, right);
                 return b;
+
+            case "<=>":
+                b = ctx.mkEq((BoolExpr) left, (BoolExpr) right);
+                return b;
         }
 
         return null;
-    }
-
-    public void teste(){
-
-        HashMap<String, String> cfg = new HashMap<String, String>();
-        cfg.put("model", "true");
-        Context ctx = new Context(cfg);
-
-        System.out.println("PushPopExample1");
-
-        /* create a big number */
-        IntSort int_type = ctx.getIntSort();
-
-        IntExpr hundred = (IntExpr) ctx.mkNumeral("100", int_type);
-        IntExpr thousand = (IntExpr) ctx.mkNumeral("1000", int_type);
-
-        /* create x */
-        IntExpr x = ctx.mkIntConst("x");
-
-        BoolExpr b1 = ctx.mkLe(x, thousand);
-        BoolExpr b2 = ctx.mkLt(x, hundred);
-        Expr b0 = ctx.mkAdd(x, thousand);
-        Expr b3 = (BoolExpr) ctx.mkAnd(b1, b2);
-        BoolExpr b4 = ctx.mkGt(x, thousand);
-        BoolExpr b5 = ctx.mkImplies((BoolExpr) b3, b4);
-
-        Solver solver = ctx.mkSolver();
-
-        System.out.println("(assert (=> (> x 100) (and (< 100 x) (<= x 1000))))");
-        solver.add(b5);
-
-        System.out.println(solver.check());
     }
 }
