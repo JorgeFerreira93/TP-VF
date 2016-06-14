@@ -3,7 +3,9 @@ package instrs;
 import operator.Exp;
 
 /**
- * Created by Jorge on 10-06-2016.
+ * Classe que representa uma atribuição.
+ *
+ * @author jorge
  */
 public class Atrib implements Instrucao {
     private Exp id;

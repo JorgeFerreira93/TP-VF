@@ -7,7 +7,9 @@ import java.util.ArrayList;
 import java.util.HashMap;
 
 /**
- * Created by jorge on 6/11/16.
+ * Classe que dado um conjunto de condições retorna o seu resultado.
+ *
+ * @author jorge
  */
 public class Prover {
 
@@ -17,6 +19,11 @@ public class Prover {
         this.condicoes = condicoes;
     }
 
+    /**
+     * Método que retorna o conjunto de resultados da prova de cada condição de verificação
+     *
+     * @return Conjunto de resultados.
+     * */
     public ArrayList<Result> parse(){
 
         HashMap<String, String> cfg = new HashMap<String, String>();
@@ -49,6 +56,13 @@ public class Prover {
         return results;
     }
 
+    /**
+     * Método que constrói uma expressão Z3 para ser validada
+     *
+     * @param ctx Contexto
+     * @param e Condição de verificação
+     * @return Expressão a ser verificada.
+     * */
     private Expr resExp(Exp e, Context ctx){
 
         Operador expressao = (Operador) e;

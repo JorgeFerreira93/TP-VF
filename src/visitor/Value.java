@@ -1,7 +1,9 @@
 package visitor;
 
 /**
- * Created by Jorge on 10-06-2016.
+ * Classe usada para transferẽncia de valores durante a visita da AST.
+ *
+ * @author jorge
  */
 public class Value {
 

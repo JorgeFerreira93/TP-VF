@@ -7,13 +7,22 @@ import operator.Operador;
 import java.util.ArrayList;
 
 /**
- * Created by jorge on 6/13/16.
+ * Classe que gera as condições de verificação de um programa.
+ *
+ * @author jorge
  */
 public class VCGen {
 
     public VCGen(){}
 
-    public static ArrayList<Exp> vcg(Programa p){
+    /**
+     * Método que recebe um objeto da class Programa e gera as suas condições de verificação através da seguinte
+     * fórmula: VCG({P}C{Q}) = {[P->wp(C,Q)]} U VCaux(C,Q)
+     *
+     * @param p Programa a ser analisado
+     * @return O conjunto das condições de verificaão
+     * */
+    public ArrayList<Exp> vcg(Programa p){
 
         ArrayList<Exp> res = new ArrayList<>();
 
@@ -32,7 +41,14 @@ public class VCGen {
         return res;
     }
 
-    private static Exp wp(ArrayList<Instrucao> instrucoes, Exp pos){
+    /**
+     * Aplica a regra wp a um conjunto de instruções
+     *
+     * @param instrucoes Conjunto de instruções
+     * @param pos Pós-condição
+     * @return Condição
+     * */
+    private Exp wp(ArrayList<Instrucao> instrucoes, Exp pos){
 
         ArrayList<Exp> condicoes = new ArrayList<>();
 
@@ -59,17 +75,38 @@ public class VCGen {
         }
     }
 
-    private static Exp wpAtrib(Atrib a, Exp pos){
+    /**
+     * Aplica a regra wp(atrib) a uma atribuição
+     *
+     * @param a Atribuição
+     * @param pos Pós-condição
+     * @return Condição
+     * */
+    private Exp wpAtrib(Atrib a, Exp pos){
         pos.replace(a.getId(), a.getAtrib());
 
         return pos;
     }
 
-    private static Exp wpWhile(WhileInstruction w, Exp pos){
+    /**
+     * Aplica a regra wp(while) a uma instrução while
+     *
+     * @param w Instrução while
+     * @param pos Pós-condição
+     * @return Condição
+     * */
+    private Exp wpWhile(WhileInstruction w, Exp pos){
         return w.getInv();
     }
 
-    private static Exp wpIf(IfInstruction i, Exp pos) {
+    /**
+     * Aplica a regra wp(if) a uma instrução if
+     *
+     * @param i Instrução if
+     * @param pos Pós-condição
+     * @return Condição
+     * */
+    private Exp wpIf(IfInstruction i, Exp pos) {
         Exp posIf = wp(i.getInstrucoesIf(), (Exp) pos.clone());
 
         if(i.getInstrucoesElse() != null){
@@ -86,7 +123,14 @@ public class VCGen {
         }
     }
 
-    private static ArrayList<Exp> vcAux(ArrayList<Instrucao> instrucoes, Exp pos){
+    /**
+     * Aplica a regra VCaux a um conjunto de instruções
+     *
+     * @param instrucoes Conjunto de instruções
+     * @param pos Pós-condição
+     * @return Condição
+     * */
+    private ArrayList<Exp> vcAux(ArrayList<Instrucao> instrucoes, Exp pos){
 
         ArrayList<Exp> condicoes = new ArrayList<>();
 
@@ -130,20 +174,31 @@ public class VCGen {
         }
     }
 
-    private static ArrayList<Exp> vcWhile(WhileInstruction w, Exp pos){
+    /**
+     * Aplica a regra VCaux(while) a uma instrução while
+     *
+     * @param w Instrução while
+     * @param pos Pós-condição
+     * @return Condição
+     * */
+    private ArrayList<Exp> vcWhile(WhileInstruction w, Exp pos){
 
         Exp expressaoWP = wp(w.getInstrucoes(), (Exp) w.getInv().clone());
         ArrayList<Exp> expressoes = new ArrayList<>();
+
+        /* (I && b) -> wp(C, I) */
         Operador o1 = new Operador("&&", w.getInv(), w.getCond());
         Operador o2 = new Operador("=>", o1, expressaoWP);
         expressoes.add(o2);
 
+        /* (I && !b) -> Q */
         Operador not = new Operador("!", null, w.getCond());
         o1 = new Operador("&&", w.getInv(), not);
         o2 = new Operador("=>", o1, pos);
 
         expressoes.add(o2);
 
+        /* VCaux(C, I) */
         ArrayList<Exp> expressoesVC = vcAux(w.getInstrucoes(), pos);
 
         for(Exp e : expressoesVC){
@@ -153,7 +208,14 @@ public class VCGen {
         return expressoes;
     }
 
-    private static ArrayList<Exp> vcIf(IfInstruction i, Exp pos){
+    /**
+     * Aplica a regra VCaux(if) a uma intrução if
+     *
+     * @param i Instrução if
+     * @param pos Pós-condição
+     * @return Condição
+     * */
+    private ArrayList<Exp> vcIf(IfInstruction i, Exp pos){
 
         ArrayList<Exp> expressoesVC = vcAux(i.getInstrucoesIf(), pos);
         ArrayList<Exp> expressoes = new ArrayList<>();

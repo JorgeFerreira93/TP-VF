@@ -5,7 +5,9 @@ import operator.Exp;
 import java.util.ArrayList;
 
 /**
- * Created by Jorge on 10-06-2016.
+ * Classe que representa uma instrução while.
+ *
+ * @author jorge
  */
 public class WhileInstruction implements Instrucao {
     private Exp cond;

@@ -5,9 +5,11 @@ import operator.Exp;
 import java.util.ArrayList;
 
 /**
- * Created by jorge on 6/13/16.
+ * Classe que representa uma instrução for.
+ *
+ * @author jorge
  */
-public class ForInstruction {
+public class ForInstruction implements Instrucao {
     private Instrucao atr;
     private Exp cond;
     private Exp inv;

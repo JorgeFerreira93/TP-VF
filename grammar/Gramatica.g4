@@ -21,7 +21,7 @@ instrs : instr instr*
 instr : ifInstruction
       | whileInstruction
       | forInstruction
-      | atr
+      | atr ';'
       ;
 
 ifInstruction : 'if' '(' cond ')' '{' instrs '}' elseCondition?
@@ -39,7 +39,7 @@ forInstruction : 'for' '(' atr ';' cond ';' atr ')' inv '{' instrs '}'
 inv : '[' cond ']'
      ;
 
-atr : ID '=' exp ';'
+atr : ID '=' exp
     ;
 
 exp : termo
@@ -52,8 +52,6 @@ termo : fator
 
 fator : ID
       | INT
-      | 'true'
-      | 'false'
       ;
 
 cond : comp

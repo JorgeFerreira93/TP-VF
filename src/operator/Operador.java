@@ -1,7 +1,10 @@
 package operator;
 
 /**
- * Created by Jorge on 11-06-2016.
+ * Classe que representa uma expressão com um operador, por exemplo: expressões
+ * aritméticas, condicionais e lógicas.
+ *
+ * @author jorge
  */
 public class Operador implements Exp{
     private Exp left;

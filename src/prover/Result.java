@@ -5,7 +5,9 @@ import com.microsoft.z3.Status;
 import operator.Exp;
 
 /**
- * Created by jorge on 6/13/16.
+ * Classe que representa o resultado da prova de uma condição de verificação.
+ *
+ * @author jorge
  */
 public class Result {
 

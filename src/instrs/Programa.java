@@ -5,7 +5,9 @@ import operator.Exp;
 import java.util.ArrayList;
 
 /**
- * Created by Jorge on 10-06-2016.
+ * Classe que representa um programa.
+ *
+ * @author jorge
  */
 public class Programa {
     private Exp pre;

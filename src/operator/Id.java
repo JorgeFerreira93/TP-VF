@@ -1,7 +1,9 @@
 package operator;
 
 /**
- * Created by Jorge on 11-06-2016.
+ * Classe que representa um identificador.
+ *
+ * @author jorge
  */
 public class Id implements Exp {
     private String name;

@@ -1,7 +1,9 @@
 package visitor;
 
 /**
- * Created by Jorge on 06-06-2016.
+ * Construção do objeto Programa
+ *
+ * @author jorge
  */
 
 import instrs.*;
@@ -44,6 +46,9 @@ public class Visitor extends GramaticaBaseVisitor<Value> {
         }
         else if(ctx.ifInstruction() != null){
             return visitIfInstruction(ctx.ifInstruction());
+        }
+        else if(ctx.forInstruction() != null){
+            return visitForInstruction(ctx.forInstruction());
         }
         return null;
     }

@@ -1,7 +1,9 @@
 package operator;
 
 /**
- * Created by Jorge on 11-06-2016.
+ * Classe que representa um inteiro.
+ *
+ * @author jorge
  */
 public class Int implements Exp{
     private int n;
