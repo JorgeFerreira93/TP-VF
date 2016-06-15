@@ -26,8 +26,7 @@ public class VCGen {
 
         ArrayList<Exp> res = new ArrayList<>();
 
-
-        Exp expressao = wp((ArrayList<Instrucao>) p.getInstrucoes().clone(), p.getPos());
+        Exp expressao = wp((ArrayList<Instrucao>) p.getInstrucoes().clone(),(Exp) p.getPos().clone());
 
         Operador o = new Operador("=>", p.getPre(), expressao);
         res.add(o);
@@ -83,6 +82,7 @@ public class VCGen {
      * @return Condição
      * */
     private Exp wpAtrib(Atrib a, Exp pos){
+
         pos.replace(a.getId(), a.getAtrib());
 
         return pos;
@@ -96,7 +96,7 @@ public class VCGen {
      * @return Condição
      * */
     private Exp wpWhile(WhileInstruction w, Exp pos){
-        return w.getInv();
+        return (Exp) w.getInv().clone();
     }
 
     /**
@@ -110,9 +110,9 @@ public class VCGen {
         Exp posIf = wp(i.getInstrucoesIf(), (Exp) pos.clone());
 
         if(i.getInstrucoesElse() != null){
-            Exp posElse = wp(i.getInstrucoesElse(), (Exp) pos.clone());
             Operador o1 = new Operador("=>", i.getCond(), posIf);
             Operador not = new Operador("!", null, i.getCond());
+            Exp posElse = wp((ArrayList<Instrucao>) i.getInstrucoesElse().clone(), (Exp) pos.clone());
             Operador o2 = new Operador("=>", not, posElse);
             Operador res = new Operador("&&", o1, o2);
             return res;

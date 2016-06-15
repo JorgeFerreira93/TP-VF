@@ -2,25 +2,54 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="02063882-cd26-451f-8bf2-66bbc821fc8e" name="Default" comment="">
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/input/exemplo1" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/input/exemplo2" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/TPVF.iml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/TPVF/fich.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/TPVF/instrs/Atrib.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/TPVF/instrs/IfCondition.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/TPVF/instrs/Instrucao.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/TPVF/instrs/Programa.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/TPVF/instrs/WhileCondition.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/TPVF/main/Main.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/TPVF/operator/Exp.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/TPVF/operator/Id.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/TPVF/operator/Int.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/TPVF/operator/Operador.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/TPVF/parser/Gramatica.tokens" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/TPVF/parser/GramaticaBaseVisitor.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/TPVF/parser/GramaticaLexer.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/TPVF/parser/GramaticaLexer.tokens" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/TPVF/parser/GramaticaParser$AtrContext.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/TPVF/parser/GramaticaParser$CompContext.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/TPVF/parser/GramaticaParser$CondContext.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/TPVF/parser/GramaticaParser$ExpContext.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/TPVF/parser/GramaticaParser$FatorContext.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/TPVF/parser/GramaticaParser$IfConditionContext.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/TPVF/parser/GramaticaParser$InstrContext.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/TPVF/parser/GramaticaParser$InstrsContext.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/TPVF/parser/GramaticaParser$InvContext.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/TPVF/parser/GramaticaParser$OpContext.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/TPVF/parser/GramaticaParser$PosCContext.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/TPVF/parser/GramaticaParser$PreCContext.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/TPVF/parser/GramaticaParser$ProgramaContext.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/TPVF/parser/GramaticaParser$TermoContext.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/TPVF/parser/GramaticaParser$WhileConditionContext.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/TPVF/parser/GramaticaParser.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/TPVF/parser/GramaticaVisitor.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/TPVF/testeParser$BoolContext.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/TPVF/testeParser$IntContext.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/TPVF/visitor/Value.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/TPVF/visitor/Visitor.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/fich.txt" afterPath="" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/grammar/Gramatica.g4" afterPath="$PROJECT_DIR$/grammar/Gramatica.g4" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/generator/VCGen.java" afterPath="$PROJECT_DIR$/src/generator/VCGen.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/instrs/Atrib.java" afterPath="$PROJECT_DIR$/src/instrs/Atrib.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/instrs/ForInstruction.java" afterPath="$PROJECT_DIR$/src/instrs/ForInstruction.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/instrs/IfInstruction.java" afterPath="$PROJECT_DIR$/src/instrs/IfInstruction.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/instrs/Programa.java" afterPath="$PROJECT_DIR$/src/instrs/Programa.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/instrs/WhileInstruction.java" afterPath="$PROJECT_DIR$/src/instrs/WhileInstruction.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/operator/Id.java" afterPath="$PROJECT_DIR$/src/operator/Id.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/operator/Int.java" afterPath="$PROJECT_DIR$/src/operator/Int.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/operator/Operador.java" afterPath="$PROJECT_DIR$/src/operator/Operador.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/parser/Gramatica.tokens" afterPath="$PROJECT_DIR$/src/parser/Gramatica.tokens" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/Main.java" afterPath="$PROJECT_DIR$/src/main/Main.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/parser/GramaticaBaseVisitor.java" afterPath="$PROJECT_DIR$/src/parser/GramaticaBaseVisitor.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/parser/GramaticaLexer.java" afterPath="$PROJECT_DIR$/src/parser/GramaticaLexer.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/parser/GramaticaLexer.tokens" afterPath="$PROJECT_DIR$/src/parser/GramaticaLexer.tokens" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/parser/GramaticaParser.java" afterPath="$PROJECT_DIR$/src/parser/GramaticaParser.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/prover/Prover.java" afterPath="$PROJECT_DIR$/src/prover/Prover.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/prover/Result.java" afterPath="$PROJECT_DIR$/src/prover/Result.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/visitor/Value.java" afterPath="$PROJECT_DIR$/src/visitor/Value.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/visitor/Visitor.java" afterPath="$PROJECT_DIR$/src/visitor/Visitor.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/parser/GramaticaVisitor.java" afterPath="$PROJECT_DIR$/src/parser/GramaticaVisitor.java" />
     </list>
     <ignored path="TP-VF.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -48,8 +77,8 @@
       <file leaf-file-name="Visitor.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/visitor/Visitor.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-825">
-              <caret line="20" column="0" selection-start-line="20" selection-start-column="0" selection-end-line="20" selection-end-column="0" />
+            <state relative-caret-position="892">
+              <caret line="86" column="43" selection-start-line="86" selection-start-column="43" selection-end-line="86" selection-end-column="43" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -57,31 +86,41 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Exp.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/operator/Exp.java">
+      <file leaf-file-name="exemplo1" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/input/exemplo1">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="75">
-              <caret line="5" column="17" selection-start-line="5" selection-start-column="17" selection-end-line="5" selection-end-column="17" />
+              <caret line="5" column="12" selection-start-line="5" selection-start-column="12" selection-end-line="5" selection-end-column="12" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Id.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/operator/Id.java">
+      <file leaf-file-name="Atrib.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/instrs/Atrib.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="45">
-              <caret line="3" column="42" selection-start-line="3" selection-start-column="42" selection-end-line="3" selection-end-column="42" />
+            <state relative-caret-position="105">
+              <caret line="7" column="16" selection-start-line="7" selection-start-column="16" selection-end-line="7" selection-end-column="16" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="fich.txt" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/fich.txt">
+      <file leaf-file-name="Prover.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/prover/Prover.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="45">
-              <caret line="3" column="1" selection-start-line="3" selection-start-column="1" selection-end-line="3" selection-end-column="1" />
+            <state relative-caret-position="105">
+              <caret line="70" column="26" selection-start-line="70" selection-start-column="26" selection-end-line="70" selection-end-column="26" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Gramatica.g4" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/grammar/Gramatica.g4">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="240">
+              <caret line="53" column="12" selection-start-line="53" selection-start-column="12" selection-end-line="53" selection-end-column="12" />
               <folding />
             </state>
           </provider>
@@ -90,72 +129,43 @@
       <file leaf-file-name="VCGen.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/generator/VCGen.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="165">
-              <caret line="11" column="3" selection-start-line="11" selection-start-column="3" selection-end-line="11" selection-end-column="16" />
+            <state relative-caret-position="107">
+              <caret line="12" column="3" selection-start-line="12" selection-start-column="3" selection-end-line="12" selection-end-column="3" />
               <folding>
                 <element signature="imports" expanded="true" />
-                <element signature="method#wpAtrib#0;class#VCGen#0" expanded="false" />
-                <element signature="method#wpIf#0;class#VCGen#0" expanded="false" />
-                <element signature="method#vcAux#0;class#VCGen#0" expanded="false" />
-                <element signature="method#vcWhile#0;class#VCGen#0" expanded="false" />
+                <element signature="e#2492#2493#0" expanded="true" />
+                <element signature="e#2539#2540#0" expanded="true" />
                 <element signature="method#vcIf#0;class#VCGen#0" expanded="false" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Prover.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/prover/Prover.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="300">
-              <caret line="22" column="91" selection-start-line="22" selection-start-column="91" selection-end-line="22" selection-end-column="91" />
-              <folding>
-                <element signature="imports" expanded="true" />
-                <element signature="e#610#626#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Int.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/operator/Int.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="45">
-              <caret line="3" column="36" selection-start-line="3" selection-start-column="36" selection-end-line="3" selection-end-column="36" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Result.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/prover/Result.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="105">
-              <caret line="7" column="77" selection-start-line="7" selection-start-column="77" selection-end-line="7" selection-end-column="77" />
-              <folding>
-                <element signature="imports" expanded="true" />
-                <element signature="e#674#675#0" expanded="true" />
-                <element signature="e#710#711#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Value.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/visitor/Value.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="45">
-              <caret line="3" column="70" selection-start-line="3" selection-start-column="70" selection-end-line="3" selection-end-column="70" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Operador.java" pinned="false" current-in-tab="true">
+      <file leaf-file-name="Operador.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/operator/Operador.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="135">
-              <caret line="9" column="18" selection-start-line="9" selection-start-column="18" selection-end-line="9" selection-end-column="18" />
+            <state relative-caret-position="132">
+              <caret line="32" column="49" selection-start-line="32" selection-start-column="49" selection-end-line="32" selection-end-column="49" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Main.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/Main.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="112">
+              <caret line="39" column="0" selection-start-line="39" selection-start-column="0" selection-end-line="39" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="exemplo3" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/input/exemplo3">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="165">
+              <caret line="11" column="34" selection-start-line="11" selection-start-column="34" selection-end-line="11" selection-end-column="34" />
               <folding />
             </state>
           </provider>
@@ -183,10 +193,6 @@
       <list>
         <option value="$PROJECT_DIR$/libs/com.microsoft.z3.jar!/com/microsoft/z3/IntExpr.class" />
         <option value="$PROJECT_DIR$/src/instrs/IfCondition.java" />
-        <option value="$PROJECT_DIR$/src/main/Main.java" />
-        <option value="$PROJECT_DIR$/src/fich.txt" />
-        <option value="$PROJECT_DIR$/grammar/Gramatica.g4" />
-        <option value="$PROJECT_DIR$/src/generator/VCGen.java" />
         <option value="$PROJECT_DIR$/src/instrs/Atrib.java" />
         <option value="$PROJECT_DIR$/src/instrs/ForInstruction.java" />
         <option value="$PROJECT_DIR$/src/instrs/IfInstruction.java" />
@@ -194,11 +200,19 @@
         <option value="$PROJECT_DIR$/src/instrs/WhileInstruction.java" />
         <option value="$PROJECT_DIR$/src/operator/Id.java" />
         <option value="$PROJECT_DIR$/src/operator/Int.java" />
-        <option value="$PROJECT_DIR$/src/operator/Operador.java" />
-        <option value="$PROJECT_DIR$/src/visitor/Visitor.java" />
         <option value="$PROJECT_DIR$/src/visitor/Value.java" />
         <option value="$PROJECT_DIR$/src/prover/Result.java" />
         <option value="$PROJECT_DIR$/src/prover/Prover.java" />
+        <option value="$PROJECT_DIR$/TP-VF.iml" />
+        <option value="$PROJECT_DIR$/src/fich.txt" />
+        <option value="$PROJECT_DIR$/input/fatorial" />
+        <option value="$PROJECT_DIR$/grammar/Gramatica.g4" />
+        <option value="$PROJECT_DIR$/src/visitor/Visitor.java" />
+        <option value="$PROJECT_DIR$/input/exemplo2" />
+        <option value="$PROJECT_DIR$/src/operator/Operador.java" />
+        <option value="$PROJECT_DIR$/src/generator/VCGen.java" />
+        <option value="$PROJECT_DIR$/src/main/Main.java" />
+        <option value="$PROJECT_DIR$/input/exemplo3" />
       </list>
     </option>
   </component>
@@ -231,6 +245,7 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="Scratches" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -246,20 +261,6 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="TP-VF" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="TP-VF" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="TP-VF" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -312,10 +313,6 @@
               <option name="myItemId" value="src" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="operator" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
           </PATH>
           <PATH>
             <PATH_ELEMENT>
@@ -363,11 +360,7 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="generator" />
+              <option name="myItemId" value="input" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -388,12 +381,11 @@
         </subPane>
       </pane>
       <pane id="Scope" />
-      <pane id="Scratches" />
       <pane id="PackagesPane" />
     </panes>
   </component>
   <component name="PropertiesComponent">
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/src/parser" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="project.structure.last.edited" value="Modules" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.2" />
@@ -412,9 +404,9 @@
         </pattern>
       </extension>
       <option name="MAIN_CLASS_NAME" value="main.Main" />
-      <option name="VM_PARAMETERS" />
-      <option name="PROGRAM_PARAMETERS" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="VM_PARAMETERS" value="" />
+      <option name="PROGRAM_PARAMETERS" value="-p" />
+      <option name="WORKING_DIRECTORY" value="file://$PROJECT_DIR$" />
       <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
       <option name="ALTERNATIVE_JRE_PATH" />
       <option name="ENABLE_SWING_INSPECTOR" value="false" />
@@ -702,7 +694,14 @@
       <option name="project" value="LOCAL" />
       <updated>1465838285561</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="Documentation">
+      <created>1465916579740</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1465916579740</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="ToolWindowManager">
@@ -712,11 +711,13 @@
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Tool Output" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3276923" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.30461538" sideWeight="0.5" order="12" side_tool="false" content_ui="tabs" />
       <window_info id="Palette&#9;" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Analysis" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.34923077" sideWeight="0.5058565" order="8" side_tool="true" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.34923077" sideWeight="0.5087848" order="8" side_tool="true" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.34923077" sideWeight="0.49121523" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32923076" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
@@ -726,14 +727,12 @@
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="UI Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.24597365" sideWeight="0.5061538" order="4" side_tool="true" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.30461538" sideWeight="0.5" order="12" side_tool="false" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.34923077" sideWeight="0.4941435" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
     </layout>
   </component>
@@ -752,7 +751,8 @@
     <MESSAGE value="Z3" />
     <MESSAGE value="Alguns Fixes&#10;Adicionado For" />
     <MESSAGE value="Fix private" />
-    <option name="LAST_COMMIT_MESSAGE" value="Fix private" />
+    <MESSAGE value="Documentation" />
+    <option name="LAST_COMMIT_MESSAGE" value="Documentation" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -765,32 +765,6 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/instrs/WhileInstruction.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="105">
-          <caret line="9" column="0" selection-start-line="9" selection-start-column="0" selection-end-line="18" selection-end-column="5" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/instrs/Programa.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="150">
-          <caret line="12" column="12" selection-start-line="12" selection-start-column="12" selection-end-line="12" selection-end-column="12" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/visitor/Visitor.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/instrs/WhileInstruction.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="150">
@@ -812,8 +786,7 @@
         <state relative-caret-position="135">
           <caret line="13" column="12" selection-start-line="13" selection-start-column="12" selection-end-line="13" selection-end-column="12" />
           <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#610#626#0" expanded="true" />
+            <element signature="imports" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -823,9 +796,7 @@
         <state relative-caret-position="375">
           <caret line="32" column="28" selection-start-line="32" selection-start-column="28" selection-end-line="32" selection-end-column="28" />
           <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#674#675#0" expanded="true" />
-            <element signature="e#710#711#0" expanded="true" />
+            <element signature="imports" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -909,8 +880,7 @@
         <state relative-caret-position="315">
           <caret line="27" column="68" selection-start-line="27" selection-start-column="68" selection-end-line="27" selection-end-column="68" />
           <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#610#626#0" expanded="true" />
+            <element signature="imports" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -951,20 +921,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="225">
           <caret line="15" column="6" selection-start-line="15" selection-start-column="6" selection-end-line="15" selection-end-column="6" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/TPVF.iml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/TP-VF.iml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
         </state>
       </provider>
     </entry>
@@ -1029,29 +985,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="285">
           <caret line="26" column="0" selection-start-line="26" selection-start-column="0" selection-end-line="26" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/Main.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="216">
-          <caret line="52" column="13" selection-start-line="52" selection-start-column="13" selection-end-line="52" selection-end-column="13" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/grammar/Gramatica.g4">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="285">
-          <caret line="35" column="52" selection-start-line="35" selection-start-column="52" selection-end-line="35" selection-end-column="52" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/instrs/Atrib.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="105">
-          <caret line="7" column="16" selection-start-line="7" selection-start-column="16" selection-end-line="7" selection-end-column="16" />
           <folding />
         </state>
       </provider>
@@ -1061,16 +994,8 @@
         <state relative-caret-position="135">
           <caret line="9" column="16" selection-start-line="9" selection-start-column="16" selection-end-line="9" selection-end-column="16" />
           <folding>
-            <element signature="imports" expanded="true" />
+            <element signature="imports" expanded="false" />
           </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/instrs/IfInstruction.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="105">
-          <caret line="9" column="16" selection-start-line="9" selection-start-column="16" selection-end-line="9" selection-end-column="16" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1122,62 +1047,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/generator/VCGen.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="165">
-          <caret line="11" column="3" selection-start-line="11" selection-start-column="3" selection-end-line="11" selection-end-column="16" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="method#wpAtrib#0;class#VCGen#0" expanded="false" />
-            <element signature="method#wpIf#0;class#VCGen#0" expanded="false" />
-            <element signature="method#vcAux#0;class#VCGen#0" expanded="false" />
-            <element signature="method#vcWhile#0;class#VCGen#0" expanded="false" />
-            <element signature="method#vcIf#0;class#VCGen#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/prover/Result.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="105">
-          <caret line="7" column="77" selection-start-line="7" selection-start-column="77" selection-end-line="7" selection-end-column="77" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#674#675#0" expanded="true" />
-            <element signature="e#710#711#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/prover/Prover.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="300">
-          <caret line="22" column="91" selection-start-line="22" selection-start-column="91" selection-end-line="22" selection-end-column="91" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#610#626#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/fich.txt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="45">
-          <caret line="3" column="1" selection-start-line="3" selection-start-column="1" selection-end-line="3" selection-end-column="1" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/visitor/Visitor.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-825">
-          <caret line="20" column="0" selection-start-line="20" selection-start-column="0" selection-end-line="20" selection-end-column="0" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/operator/Exp.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="75">
@@ -1186,10 +1055,123 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/TPVF.iml" />
+    <entry file="file://$PROJECT_DIR$/TP-VF.iml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="375">
+          <caret line="25" column="16" selection-start-line="25" selection-start-column="16" selection-end-line="25" selection-end-column="16" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/fich.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="45">
+          <caret line="3" column="14" selection-start-line="3" selection-start-column="14" selection-end-line="3" selection-end-column="14" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/prover/Result.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="96">
+          <caret line="7" column="77" selection-start-line="7" selection-start-column="77" selection-end-line="7" selection-end-column="77" />
+          <folding>
+            <element signature="imports" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/input/exemplo2">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="15">
+          <caret line="1" column="10" selection-start-line="1" selection-start-column="10" selection-end-line="1" selection-end-column="10" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/grammar/Gramatica.g4">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="240">
+          <caret line="53" column="12" selection-start-line="53" selection-start-column="12" selection-end-line="53" selection-end-column="12" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/operator/Operador.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="135">
-          <caret line="9" column="18" selection-start-line="9" selection-start-column="18" selection-end-line="9" selection-end-column="18" />
+        <state relative-caret-position="132">
+          <caret line="32" column="49" selection-start-line="32" selection-start-column="49" selection-end-line="32" selection-end-column="49" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/prover/Prover.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="105">
+          <caret line="70" column="26" selection-start-line="70" selection-start-column="26" selection-end-line="70" selection-end-column="26" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/generator/VCGen.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="107">
+          <caret line="12" column="3" selection-start-line="12" selection-start-column="3" selection-end-line="12" selection-end-column="3" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#2492#2493#0" expanded="true" />
+            <element signature="e#2539#2540#0" expanded="true" />
+            <element signature="method#vcIf#0;class#VCGen#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/visitor/Visitor.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="892">
+          <caret line="86" column="43" selection-start-line="86" selection-start-column="43" selection-end-line="86" selection-end-column="43" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/instrs/IfInstruction.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="345">
+          <caret line="25" column="27" selection-start-line="25" selection-start-column="13" selection-end-line="25" selection-end-column="27" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/input/exemplo1">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="75">
+          <caret line="5" column="12" selection-start-line="5" selection-start-column="12" selection-end-line="5" selection-end-column="12" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/instrs/Atrib.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="105">
+          <caret line="7" column="16" selection-start-line="7" selection-start-column="16" selection-end-line="7" selection-end-column="16" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/Main.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="112">
+          <caret line="39" column="0" selection-start-line="39" selection-start-column="0" selection-end-line="39" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/input/exemplo3">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="165">
+          <caret line="11" column="34" selection-start-line="11" selection-start-column="34" selection-end-line="11" selection-end-column="34" />
           <folding />
         </state>
       </provider>

@@ -37,7 +37,7 @@ forInstruction : 'for' '(' atr ';' cond ';' atr ')' inv '{' instrs '}'
                ;
 
 inv : '[' cond ']'
-     ;
+    ;
 
 atr : ID '=' exp
     ;
@@ -51,7 +51,7 @@ termo : fator
       ;
 
 fator : ID
-      | INT
+      | '-'? INT
       ;
 
 cond : comp

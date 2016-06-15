@@ -49,12 +49,12 @@ public class Main {
 
                 ArrayList<Result> results = prover.parse();
 
-                printResults(results);
+                printResults(results, args);
             }
         }
     }
 
-    private static void printResults(ArrayList<Result> results){
+    private static void printResults(ArrayList<Result> results, String[] args){
 
         int i=1;
         boolean f = true;
@@ -68,6 +68,12 @@ public class Main {
             System.out.println("\tResult: " + r.getStat());
             i++;
             System.out.println();
+
+            if(args.length > 0 && args[0].equals("-p")){
+                System.out.println(r.getStat() == Status.SATISFIABLE ? "Modelo: " : "Prova: ");
+                System.out.println(r.getProva());
+            }
+            System.out.println("\n----------------------------------------------------------------------------------------------------\n");
         }
 
         System.out.print("O programa " + (f ? "é" : "não é") + " válido");
